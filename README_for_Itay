@@ -1,0 +1,9 @@
+Hi.
+
+in the "log section thee are 3 logs:
+
+1. jenkins log - 
+
+to make it easier to read I've added echoes for every step so you can just jump between the echoes... 
+
+2. ansible logs - one for the apache and mysql installation and one for the yum update pkgs on both nodes. 
