@@ -9,6 +9,11 @@
   - name: start httpd service
     service: name=httpd state=started
 
+  - name: Install mysqpl repo
+    shell: sudo rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
+    args:
+      creates: /etc/yum.repos.d/mysql-community.repo
+
   - name: insall mysql
     yum:  name=mysql-server state=latest
 
