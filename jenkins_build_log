@@ -1,0 +1,312 @@
+Started by user [8mha:////4CrjZ/msgPumpRY5n3OJw3cU3rZmpf8W9505mU1fK5sIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6pcWpRfpZqXnZmXnFiSm5mXkAZQaG88cAAAA=[0myuval l
+Building in workspace /var/lib/jenkins/workspace/do.course_final_project
+[do.course_final_project] $ /bin/sh -xe /tmp/jenkins1999768048198142486.sh
++ echo 'creating ec2 instances..............................'
+creating ec2 instances..............................
++ aws ec2 run-instances --region us-east-1 --image-id ami-1853ac65 --count 2 --instance-type t2.micro --key-name aws-devops-N-Virginia --security-group-ids sg-067171387fdae87b2
+{
+    "Instances": [
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-04-30T20:34:33.000Z", 
+            "PrivateIpAddress": "172.31.28.123", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-233b1e5b", 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-0bb132171948c97b3", 
+            "ImageId": "ami-1853ac65", 
+            "PrivateDnsName": "ip-172-31-28-123.ec2.internal", 
+            "KeyName": "aws-devops-N-Virginia", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "final-proj", 
+                    "GroupId": "sg-067171387fdae87b2"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-dc612997", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:7f:ba:c8:94:fc", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-233b1e5b", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-09016c604ecb41559", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-172-31-28-123.ec2.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "172.31.28.123"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-172-31-28-123.ec2.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-04312ee0df18533c2", 
+                        "AttachTime": "2018-04-30T20:34:33.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "final-proj", 
+                            "GroupId": "sg-067171387fdae87b2"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "952821022824", 
+                    "SubnetId": "subnet-dc612997", 
+                    "PrivateIpAddress": "172.31.28.123"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "us-east-1b"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "AmiLaunchIndex": 1
+        }, 
+        {
+            "Monitoring": {
+                "State": "disabled"
+            }, 
+            "PublicDnsName": "", 
+            "StateReason": {
+                "Message": "pending", 
+                "Code": "pending"
+            }, 
+            "State": {
+                "Code": 0, 
+                "Name": "pending"
+            }, 
+            "EbsOptimized": false, 
+            "LaunchTime": "2018-04-30T20:34:33.000Z", 
+            "PrivateIpAddress": "172.31.20.48", 
+            "ProductCodes": [], 
+            "VpcId": "vpc-233b1e5b", 
+            "StateTransitionReason": "", 
+            "InstanceId": "i-0d2362f93e727f48e", 
+            "ImageId": "ami-1853ac65", 
+            "PrivateDnsName": "ip-172-31-20-48.ec2.internal", 
+            "KeyName": "aws-devops-N-Virginia", 
+            "SecurityGroups": [
+                {
+                    "GroupName": "final-proj", 
+                    "GroupId": "sg-067171387fdae87b2"
+                }
+            ], 
+            "ClientToken": "", 
+            "SubnetId": "subnet-dc612997", 
+            "InstanceType": "t2.micro", 
+            "NetworkInterfaces": [
+                {
+                    "Status": "in-use", 
+                    "MacAddress": "0a:b5:4b:6a:5c:6e", 
+                    "SourceDestCheck": true, 
+                    "VpcId": "vpc-233b1e5b", 
+                    "Description": "", 
+                    "NetworkInterfaceId": "eni-04a7dd651b448f5a2", 
+                    "PrivateIpAddresses": [
+                        {
+                            "PrivateDnsName": "ip-172-31-20-48.ec2.internal", 
+                            "Primary": true, 
+                            "PrivateIpAddress": "172.31.20.48"
+                        }
+                    ], 
+                    "PrivateDnsName": "ip-172-31-20-48.ec2.internal", 
+                    "Attachment": {
+                        "Status": "attaching", 
+                        "DeviceIndex": 0, 
+                        "DeleteOnTermination": true, 
+                        "AttachmentId": "eni-attach-04a85c9eaa25da311", 
+                        "AttachTime": "2018-04-30T20:34:33.000Z"
+                    }, 
+                    "Groups": [
+                        {
+                            "GroupName": "final-proj", 
+                            "GroupId": "sg-067171387fdae87b2"
+                        }
+                    ], 
+                    "Ipv6Addresses": [], 
+                    "OwnerId": "952821022824", 
+                    "SubnetId": "subnet-dc612997", 
+                    "PrivateIpAddress": "172.31.20.48"
+                }
+            ], 
+            "SourceDestCheck": true, 
+            "Placement": {
+                "Tenancy": "default", 
+                "GroupName": "", 
+                "AvailabilityZone": "us-east-1b"
+            }, 
+            "Hypervisor": "xen", 
+            "BlockDeviceMappings": [], 
+            "Architecture": "x86_64", 
+            "RootDeviceType": "ebs", 
+            "RootDeviceName": "/dev/xvda", 
+            "VirtualizationType": "hvm", 
+            "AmiLaunchIndex": 0
+        }
+    ], 
+    "ReservationId": "r-054c2a8b21a02d8c2", 
+    "Groups": [], 
+    "OwnerId": "952821022824"
+}
+[do.course_final_project] $ /bin/sh -xe /tmp/jenkins5815129477081980735.sh
+++ aws ec2 describe-instances --region us-east-1 --filters 'Name=instance.group-id,Values=sg-067171387fdae87b2 , Name=instance-state-name,Values=running'
+++ grep -i instanceid
+++ wc -l
++ '[' 0 '!=' 2 ']'
++ sleep 5
++ echo 'waiting for AWS to launch instances for security group final-proj'
+waiting for AWS to launch instances for security group final-proj
+++ aws ec2 describe-instances --region us-east-1 --filters 'Name=instance.group-id,Values=sg-067171387fdae87b2 , Name=instance-state-name,Values=running'
+++ wc -l
+++ grep -i instanceid
++ '[' 0 '!=' 2 ']'
++ sleep 5
++ echo 'waiting for AWS to launch instances for security group final-proj'
+waiting for AWS to launch instances for security group final-proj
+++ aws ec2 describe-instances --region us-east-1 --filters 'Name=instance.group-id,Values=sg-067171387fdae87b2 , Name=instance-state-name,Values=running'
+++ grep -i instanceid
+++ wc -l
++ '[' 2 '!=' 2 ']'
++ echo '*******  both instances are in '\''running'\'' state     *******************'
+*******  both instances are in 'running' state     *******************
+[do.course_final_project] $ /bin/sh -xe /tmp/jenkins7979498423639673051.sh
++ echo 'getting ip data............................'
+getting ip data............................
++ cp /dev/null /var/lib/jenkins/do_course_final_project/ec2-list
++ cp /dev/null /var/lib/jenkins/do_course_final_project/publiciplist
++ cp /dev/null /var/lib/jenkins/do_course_final_project/privateiplist
++ aws ec2 describe-instances --region us-east-1 --filters Name=instance.group-name,Values=final-proj
++ grep -i publicipaddress /var/lib/jenkins/do_course_final_project/ec2-list
++ awk '-F"' '{print $4}'
++ grep -i privateipaddress /var/lib/jenkins/do_course_final_project/ec2-list
++ grep '\.'
++ uniq
++ awk '{print $2}'
++ awk '-F"' '{print $2}'
+[do.course_final_project] $ /bin/sh -xe /tmp/jenkins2410669170359520167.sh
++ sleep 120
++ echo 'installing ansible on first node...............................'
+installing ansible on first node...............................
+++ awk 'NR == 1' /var/lib/jenkins/do_course_final_project/publiciplist
++ fphost=34.224.214.164
++ ssh -o StrictHostKeyChecking=no -i /var/lib/jenkins/do_course_final_project/aws-devops-N-Virginia.pem ec2-user@34.224.214.164 'sudo pip install ansible'
+Warning: Permanently added '34.224.214.164' (ECDSA) to the list of known hosts.
+Collecting ansible
+  Downloading https://files.pythonhosted.org/packages/d8/5f/3e7d8243159ba831942b851891d8eeac04615323a91e8447365aa7311299/ansible-2.5.2.tar.gz (10.1MB)
+Requirement already satisfied: jinja2 in /usr/lib/python2.7/dist-packages (from ansible)
+Requirement already satisfied: PyYAML in /usr/lib64/python2.7/dist-packages (from ansible)
+Requirement already satisfied: paramiko in /usr/lib/python2.7/dist-packages (from ansible)
+Collecting cryptography (from ansible)
+  Downloading https://files.pythonhosted.org/packages/dd/c2/3a5bfefb25690725824ade71e6b65449f0a9f4b29702cce10560f786ebf6/cryptography-2.2.2-cp27-cp27mu-manylinux1_x86_64.whl (2.2MB)
+Requirement already satisfied: setuptools in /usr/lib/python2.7/dist-packages (from ansible)
+Requirement already satisfied: markupsafe in /usr/lib64/python2.7/dist-packages (from jinja2->ansible)
+Requirement already satisfied: pycrypto!=2.4,>=2.1 in /usr/lib64/python2.7/dist-packages (from paramiko->ansible)
+Requirement already satisfied: ecdsa>=0.11 in /usr/lib/python2.7/dist-packages (from paramiko->ansible)
+Collecting asn1crypto>=0.21.0 (from cryptography->ansible)
+  Downloading https://files.pythonhosted.org/packages/ea/cd/35485615f45f30a510576f1a56d1e0a7ad7bd8ab5ed7cdc600ef7cd06222/asn1crypto-0.24.0-py2.py3-none-any.whl (101kB)
+Requirement already satisfied: six>=1.4.1 in /usr/lib/python2.7/dist-packages (from cryptography->ansible)
+Collecting enum34; python_version < "3" (from cryptography->ansible)
+  Downloading https://files.pythonhosted.org/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d050/enum34-1.1.6-py2-none-any.whl
+Collecting cffi>=1.7; platform_python_implementation != "PyPy" (from cryptography->ansible)
+  Downloading https://files.pythonhosted.org/packages/14/dd/3e7a1e1280e7d767bd3fa15791759c91ec19058ebe31217fe66f3e9a8c49/cffi-1.11.5-cp27-cp27mu-manylinux1_x86_64.whl (407kB)
+Collecting ipaddress; python_version < "3" (from cryptography->ansible)
+  Downloading https://files.pythonhosted.org/packages/fc/d0/7fc3a811e011d4b388be48a0e381db8d990042df54aa4ef4599a31d39853/ipaddress-1.0.22-py2.py3-none-any.whl
+Collecting idna>=2.1 (from cryptography->ansible)
+  Downloading https://files.pythonhosted.org/packages/27/cc/6dd9a3869f15c2edfab863b992838277279ce92663d334df9ecf5106f5c6/idna-2.6-py2.py3-none-any.whl (56kB)
+Collecting pycparser (from cffi>=1.7; platform_python_implementation != "PyPy"->cryptography->ansible)
+  Downloading https://files.pythonhosted.org/packages/8c/2d/aad7f16146f4197a11f8e91fb81df177adcc2073d36a17b1491fd09df6ed/pycparser-2.18.tar.gz (245kB)
+Installing collected packages: asn1crypto, enum34, pycparser, cffi, ipaddress, idna, cryptography, ansible
+  Running setup.py install for pycparser: started
+    Running setup.py install for pycparser: finished with status 'done'
+  Running setup.py install for ansible: started
+    Running setup.py install for ansible: finished with status 'done'
+Successfully installed ansible-2.5.2 asn1crypto-0.24.0 cffi-1.11.5 cryptography-2.2.2 enum34-1.1.6 idna-2.6 ipaddress-1.0.22 pycparser-2.18
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+[do.course_final_project] $ /bin/sh -xe /tmp/jenkins4913291111110951060.sh
++ echo 'creating route53 hostedzone and A records...........................'
+creating route53 hostedzone and A records...........................
+++ date +%d-%m-%Y-%H-%M
++ aws route53 create-hosted-zone --name final-proj.private --hosted-zone-config PrivateZone=true --caller-reference final-proj-reff-30-04-2018-23-37 --vpc VPCRegion=us-east-1,VPCId=vpc-233b1e5b
+{
+    "ChangeInfo": {
+        "Status": "PENDING", 
+        "SubmittedAt": "2018-04-30T20:37:35.382Z", 
+        "Id": "/change/C1L6UQ2DYOJ2VR"
+    }, 
+    "HostedZone": {
+        "ResourceRecordSetCount": 2, 
+        "CallerReference": "final-proj-reff-30-04-2018-23-37", 
+        "Config": {
+            "PrivateZone": true
+        }, 
+        "Id": "/hostedzone/Z1ZIW44XZ191RA", 
+        "Name": "final-proj.private."
+    }, 
+    "Location": "https://route53.amazonaws.com/2013-04-01/hostedzone/Z1ZIW44XZ191RA", 
+    "VPC": {
+        "VPCId": "vpc-233b1e5b", 
+        "VPCRegion": "us-east-1"
+    }
+}
+++ aws route53 list-hosted-zones-by-name --dns-name final-proj.private
+++ grep Id
+++ awk -F/ '{print $3}'
+++ awk '-F"' '{print $1}'
++ hz_id=Z1ZIW44XZ191RA
+++ awk 'NR == 1' /var/lib/jenkins/do_course_final_project/privateiplist
++ host1ip=172.31.28.123
+++ awk 'NR == 2' /var/lib/jenkins/do_course_final_project/privateiplist
++ host2ip=172.31.20.48
++ echo 'creating host'\''s json files from template..............................................'
+creating host's json files from template..............................................
++ cp /var/lib/jenkins/do_course_final_project/route53.template.json /var/lib/jenkins/do_course_final_project/route53.host1.json
++ cp /var/lib/jenkins/do_course_final_project/route53.template.json /var/lib/jenkins/do_course_final_project/route53.host2.json
++ sed -i s/my_hostname/controller.final-proj.private/g /var/lib/jenkins/do_course_final_project/route53.host1.json
++ sed -i s/my_hostname/node.final-proj.private/g /var/lib/jenkins/do_course_final_project/route53.host2.json
++ sed -i s/ip_address/172.31.28.123/g /var/lib/jenkins/do_course_final_project/route53.host1.json
++ sed -i s/ip_address/172.31.20.48/g /var/lib/jenkins/do_course_final_project/route53.host2.json
++ echo 'about to register controller and node hosts into the final-proj.private hosted_zone...................................'
+about to register controller and node hosts into the final-proj.private hosted_zone...................................
++ aws route53 change-resource-record-sets --hosted-zone-id Z1ZIW44XZ191RA --change-batch file:////var/lib/jenkins/do_course_final_project/route53.host1.json
+{
+    "ChangeInfo": {
+        "Status": "PENDING", 
+        "SubmittedAt": "2018-04-30T20:37:38.863Z", 
+        "Id": "/change/C2BWYHTOHYPDZR"
+    }
+}
++ aws route53 change-resource-record-sets --hosted-zone-id Z1ZIW44XZ191RA --change-batch file:////var/lib/jenkins/do_course_final_project/route53.host2.json
+{
+    "ChangeInfo": {
+        "Status": "PENDING", 
+        "SubmittedAt": "2018-04-30T20:37:40.555Z", 
+        "Id": "/change/C2IAF1X6A9M9DT"
+    }
+}
+Finished: SUCCESS
