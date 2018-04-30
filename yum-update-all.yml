@@ -1,0 +1,7 @@
+---
+- hosts: servers:nodes
+  become_user: root
+  become: yes
+  tasks:
+  - name: upgrade all packages
+    yum: name=* state=latest
